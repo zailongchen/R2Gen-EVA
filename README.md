@@ -1,4 +1,4 @@
-# R2GenGPT: Radiology Report Generation with Frozen LLMs
+# Optimizing Efficiency and Visual-Textual Alignment for LLM-Based Radiology Report Generation
 
 ## Introduction
 ![overview](https://github.com/zailongchen/R2Gen-EVA/blob/main/images/frame.png?raw=true)
@@ -11,8 +11,8 @@
 Git clone our repository and install the requirements.
 
 ```bash
-https://github.com/wang-zhanyu/R2GenGPT.git
-cd R2GenGPT
+https://github.com/zailongchen/R2Gen-EVA.git
+cd R2Gen-EVA
 pip install -r requirements.txt
 ```
 
@@ -27,43 +27,28 @@ After downloading the data, place it in the ./data folder.
 
 ### Training
 
-For shallow alignment
+For IU-Xray
 
 ```bash
-bash scripts/4-1.shallow_run.sh
+bash scripts/iuxray/r2gen_eva_train.sh
 ```
 
-For delta alignment
+For MIMIC-CXR
 
 ```bash
-bash scripts/5-1.delta_run.sh
+bash scripts/mimic/r2gen_eva_train.sh
 ```
 
-For deep alignment
+### Testing 
 
 ```bash
-bash scripts/6-1.deep_run.sh
+bash scripts/iuxray/r2gen_eva_test.sh
 ```
 
-### Testing (For MIMIC-CXR)
-You can download our pretrained Delta checkpoints for [Here](https://drive.google.com/drive/folders/1ywEITWfYIAAYy0VY1IZ24Ec_GoNmkqIY?usp=sharing)
-
-For shallow alignment
+For MIMIC-CXR
 
 ```bash
-bash scripts/4-2.shallow_test.sh
-```
-
-For delta alignment
-
-```bash
-bash scripts/5-2.delta_test.sh
-```
-
-For deep alignment
-
-```bash
-bash scripts/6-2.shallow_test.sh
+bash scripts/mimic/r2gen_eva_test.sh
 ```
 
 
