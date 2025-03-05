@@ -1,7 +1,7 @@
 # R2GenGPT: Radiology Report Generation with Frozen LLMs
 
 ## Introduction
-![overview](https://github.com/wang-zhanyu/R2GenGPT/blob/main/images/align.png)
+![overview](https://github.com/zailongchen/R2Gen-EVA/blob/main/images/frame.png?raw=true)
 
 ## Getting Started
 ### Installation
